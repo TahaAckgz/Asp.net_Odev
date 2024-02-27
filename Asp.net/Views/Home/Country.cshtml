@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Country Page";
+}
+
+<h1>Ülkeler</h1>
+<p>Türkiye İle Aynı Saat Diliminde Olan Ülkelerin Listesi</p>
+
+<ol>
+    @foreach (var item in ViewBag.Countrys)
+    {
+        <li><a href="#"> @item</a></li>
+    }
+</ol>
